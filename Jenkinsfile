@@ -21,6 +21,9 @@ pipeline {
             }
         }
         stage('Execution of test.py') {
+            steps{
+                
+            }
         
         }
         stage('Deploying step') {
