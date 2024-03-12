@@ -2,6 +2,12 @@ pipeline {
     agent any
  
     stages {
+        stage('Delete existing directory') {
+            steps {
+                sh 'rm -rf Actionsprac'
+            }
+        }
+        
         stage('Cloning the repository') {
             steps {
                 sh 'git clone https://github.com/zaidi0069/Actionsprac.git'
