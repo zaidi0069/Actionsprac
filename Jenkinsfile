@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Execution of test.py') {
             steps{
-                
+                  sh 'pip install -r requirements.txt'
             }
         
         }
