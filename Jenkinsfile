@@ -13,6 +13,15 @@ pipeline {
                 sh 'git clone https://github.com/zaidi0069/Actionsprac.git'
             }
         }
+
+        stage('Set up Python') {
+            steps {
+                script {
+                    tool name: 'Python3', type: 'hudson.plugins.python.PythonInstallation'
+                }
+            }
+        }
+        
         stage('Dependencies installation') {
             steps {
                 sh 'pip install -r requirements.txt'
