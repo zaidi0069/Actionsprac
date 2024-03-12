@@ -14,11 +14,6 @@ pipeline {
             }
         }
 
-        stage('Set up Python') {
-            steps {
-                    sh 'sudo apt install python3'
-            }
-        }
         
         stage('Dependencies installation') {
             steps {
