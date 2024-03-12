@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Execution of test.py') {
             steps {
-                sh 'python test.py'
+                sh 'pytest test.py'
             }
         }
         stage('Deploying step') {
