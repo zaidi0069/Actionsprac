@@ -16,9 +16,7 @@ pipeline {
 
         stage('Set up Python') {
             steps {
-                script {
-                    tool name: 'Python3', type: 'hudson.plugins.python.PythonInstallation'
-                }
+                    sh 'apt install python3'
             }
         }
         
