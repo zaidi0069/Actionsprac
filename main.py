@@ -24,3 +24,5 @@ mlops_class.enrollStudents(10)
 #print("Class Name:", mlops_class.getClassName())          # Output: Class Name: MLOps
 mlops_class.dropStudents(1)
 #print("Total Strength after drop:", mlops_class.getTotalStrength())  # Output: Total Strength after drop: 7
+
+#hello world
