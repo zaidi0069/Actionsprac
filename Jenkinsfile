@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Cloning the repository') {
             steps {
-                git 'https://github.com/zaidi0069/Actionsprac.git'
+                git clone 'https://github.com/zaidi0069/Actionsprac.git'
             }
         }
         stage('Dependencies installation') {
